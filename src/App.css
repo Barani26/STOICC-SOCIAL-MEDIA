@@ -1,0 +1,123 @@
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+  padding:0%;
+}
+button{
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+.Navbar{
+  display: flex;
+ position: relative;
+  top: 0px;
+  align-items: center;
+justify-content: space-between;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin: -11px;
+
+  background-color: rgb(254, 124, 124);
+}
+
+.Navbarlinks{
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+.Navbarlink{
+  text-decoration: none;
+  color: black;
+}
+.Navbarlinks button{
+  background-color: rgb(109, 44, 44);
+  border: none;
+  
+}
+.Form{
+background-color: rgb(232, 142, 255);
+display:wrap;
+padding: 50px;
+margin-left: 30%;
+margin-right: 30%;
+border-radius: 20px;
+border-color: black;
+border-style: solid;
+align-items: center;
+justify-content: center;
+}
+.postcon{
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.postcon{
+display: inline-block;
+ margin: 0px;
+ width: 25%;
+}
+.Post{
+  margin:10px;
+  text-align: left;
+  padding: 15px;
+ display: block;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+.Footer{ 
+  background-color: rgb(254, 124, 124);
+  margin-top: auto;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  margin-bottom: -10px;
+  margin-right: -10px;
+  margin-left: -10px; 
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+  align-items: center;
+}
+.Footertag{
+  display: flex;  
+}
+.Logincon{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 120%;
+  margin: -10%;
+
+  
+}
+.Loginbox{
+  display: flex;
+  width: 60%;
+  justify-content: center;
+margin: 20px;
+padding:20px;
+align-items: center;
+border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+.Loginbox p{
+  padding: 10px;
+  font-size: large;
+}
+.Loginbox button{
+  color: rgb(8, 101, 17);
+}
+#particles canvas{
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
