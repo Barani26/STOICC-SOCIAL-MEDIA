@@ -15,7 +15,7 @@ const signInWithGoogle=async()=>{
         <ParticlesComponent id="particles"/>
 
         <div className="Loginbox">
-        <p>Sign in with Google to  CCCC Continue</p>
+        <p>Sign in with Google to Continue</p>
         <button onClick={signInWithGoogle}>Sign In With GOOGLE</button>
         </div>
     </div>
