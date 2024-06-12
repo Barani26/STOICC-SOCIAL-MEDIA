@@ -73,10 +73,8 @@ console.log(error)
     } 
 }
 
-
-
     return(
-        
+
     <div className="postcon">
         
         <div className="Post">
@@ -87,7 +85,7 @@ console.log(error)
             <p>{post.description}</p>
         </div>
         <div>
-            <p>{post.username}</p>
+            <p className="postUserName">{post.username}</p>
         <button onClick={hasLiked?deletelike:addlike}>{hasLiked?<FontAwesomeIcon icon={faThumbsDown}/>:<FontAwesomeIcon icon={faThumbsUp}/>}</button>
         {likes && <p>Likes:{likes?.length}</p>}
         </div>

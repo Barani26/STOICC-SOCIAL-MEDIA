@@ -34,7 +34,7 @@ const ParticlesComponent = (props) => {
         "autoPlay": true,
         "background": {
           "color": {
-            "value": "FF7171"
+            "value": "#000000"
           },
           "image": "",
           "position": "",
@@ -66,21 +66,21 @@ const ParticlesComponent = (props) => {
           "detectsOn": "window",
           "events": {
             "onClick": {
-              "enable": true,
+              "enable": false,
               "mode": []
             },
             "onDiv": {
               "selectors": [],
-              "enable": true,
+              "enable": false,
               "mode": [],
               "type": "circle"
             },
             "onHover": {
               "enable": false,
-              "mode": "light",
+              "mode": [],
               "parallax": {
-                "enable": true,
-                "force": 100,
+                "enable": false,
+                "force": 2,
                 "smooth": 10
               }
             },
@@ -96,7 +96,7 @@ const ParticlesComponent = (props) => {
               "quantity": 1
             },
             "attract": {
-              "distance": 20,
+              "distance": 200,
               "duration": 0.4,
               "easing": "ease-out-quad",
               "factor": 1,
@@ -165,17 +165,17 @@ const ParticlesComponent = (props) => {
               "area": {
                 "gradient": {
                   "start": {
-                    "value": "3b5e98"
+                    "value": "#ffffff"
                   },
                   "stop": {
-                    "value": "#17163e"
+                    "value": "#000000"
                   }
                 },
                 "radius": 1000
               },
               "shadow": {
                 "color": {
-                  "value": "#17163e"
+                  "value": "#000000"
                 },
                 "length": 2000
               }
@@ -213,14 +213,14 @@ const ParticlesComponent = (props) => {
             }
           },
           "color": {
-            "value": "#ff0000",
+            "value": "#fff",
             "animation": {
               "h": {
                 "count": 0,
-                "enable": true,
-                "speed": 200,
+                "enable": false,
+                "speed": 1,
                 "decay": 0,
-                "delay": 1,
+                "delay": 0,
                 "sync": true,
                 "offset": 0
               },
@@ -250,11 +250,44 @@ const ParticlesComponent = (props) => {
             "options": {},
             "type": []
           },
-          "groups": {},
+          "groups": {
+            "z5000": {
+              "number": {
+                "value": 70
+              },
+              "zIndex": {
+                "value": 50
+              }
+            },
+            "z7500": {
+              "number": {
+                "value": 30
+              },
+              "zIndex": {
+                "value": 75
+              }
+            },
+            "z2500": {
+              "number": {
+                "value": 50
+              },
+              "zIndex": {
+                "value": 25
+              }
+            },
+            "z1000": {
+              "number": {
+                "value": 40
+              },
+              "zIndex": {
+                "value": 10
+              }
+            }
+          },
           "move": {
             "angle": {
               "offset": 0,
-              "value": 90
+              "value": 10
             },
             "attract": {
               "distance": 200,
@@ -272,7 +305,7 @@ const ParticlesComponent = (props) => {
             },
             "decay": 0,
             "distance": {},
-            "direction": "none",
+            "direction": "right",
             "drift": 0,
             "enable": true,
             "gravity": {
@@ -298,7 +331,7 @@ const ParticlesComponent = (props) => {
             },
             "random": false,
             "size": false,
-            "speed": 6,
+            "speed": 5,
             "spin": {
               "acceleration": 0,
               "enable": false
@@ -314,15 +347,15 @@ const ParticlesComponent = (props) => {
           },
           "number": {
             "density": {
-              "enable": true,
-              "width": 800,
-              "height": 800
+              "enable": false,
+              "width": 1920,
+              "height": 1080
             },
             "limit": {
               "mode": "delete",
               "value": 0
             },
-            "value": 30
+            "value": 200
           },
           "opacity": {
             "value": 1,
@@ -354,16 +387,10 @@ const ParticlesComponent = (props) => {
             "close": true,
             "fill": true,
             "options": {},
-            "type": [
-              "circle",
-              "square"
-            ]
+            "type": "circle"
           },
           "size": {
-            "value": {
-              "min": 15,
-              "max": 30
-            },
+            "value": 3,
             "animation": {
               "count": 0,
               "enable": false,
@@ -380,8 +407,8 @@ const ParticlesComponent = (props) => {
             "width": 0
           },
           "zIndex": {
-            "value": 0,
-            "opacityRate": 1,
+            "value": 5,
+            "opacityRate": 0.5,
             "sizeRate": 1,
             "velocityRate": 1
           },
@@ -461,8 +488,8 @@ const ParticlesComponent = (props) => {
           "rotate": {
             "value": 0,
             "animation": {
-              "enable": true,
-              "speed": 50,
+              "enable": false,
+              "speed": 0,
               "decay": 0,
               "sync": false
             },
@@ -525,7 +552,72 @@ const ParticlesComponent = (props) => {
         "style": {},
         "themes": [],
         "zLayers": 100,
-        "emitters": [],
+        "emitters": {
+          "autoPlay": true,
+          "fill": true,
+          "life": {
+            "wait": false
+          },
+          "rate": {
+            "quantity": 1,
+            "delay": 7
+          },
+          "shape": {
+            "options": {},
+            "replace": {
+              "color": false,
+              "opacity": false
+            },
+            "type": "square"
+          },
+          "startCount": 0,
+          "size": {
+            "mode": "percent",
+            "height": 0,
+            "width": 0
+          },
+          "particles": {
+            "shape": {
+              "type": "images",
+              "options": {
+                "images": {
+                  "src": "https://particles.js.org/images/cyan_amongus.png",
+                  "width": 500,
+                  "height": 634
+                }
+              }
+            },
+            "size": {
+              "value": 40
+            },
+            "move": {
+              "speed": 10,
+              "outModes": {
+                "default": "none",
+                "right": "destroy"
+              },
+              "straight": true
+            },
+            "zIndex": {
+              "value": 0
+            },
+            "rotate": {
+              "value": {
+                "min": 0,
+                "max": 360
+              },
+              "animation": {
+                "enable": true,
+                "speed": 10,
+                "sync": true
+              }
+            }
+          },
+          "position": {
+            "x": -5,
+            "y": 55
+          }
+        },
         "motion": {
           "disable": false,
           "reduce": {

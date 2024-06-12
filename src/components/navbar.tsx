@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { auth } from '../config/firebase'
 import { signOut } from 'firebase/auth';
-import { CreatePost } from '../pages/create-post/createPost';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBars} from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom';
+import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 export const Navbar = () => {
     const [user] = useAuthState(auth);
     const use=useNavigate()
@@ -22,11 +24,14 @@ export const Navbar = () => {
                 <>
                     <p className='Navbarlink'>{user?.displayName}</p>
                     <img className='Navbarlink'src={user?.photoURL || ""} width='30px' height="30px" />
-                    <button onClick={logout}>Log Out</button>
+                    <button onClick={logout}><FontAwesomeIcon icon={faRightFromBracket} /></button>
                 </>
             )
         }
         
+        </div>
+        <div className='navbartoggle' >
+        <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
         </div>
         
     

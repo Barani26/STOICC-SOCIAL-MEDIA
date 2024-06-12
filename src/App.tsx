@@ -18,8 +18,8 @@ function App() {
         <Route path="/CreatePost" element={<CreatePost/>}/>  
       </Routes>
       <Footer />
-     </Router>
         
+     </Router>
     </div>
   );
 }
