@@ -169,26 +169,9 @@ button:hover {
 }
 
 @media screen and (max-width:600px) {
-  .navbartoggle {
-    display: inline;
-  }
-
-  .Navbarlinks {
-    display: none;
-  }
-
-  .Logincon {
-    margin-top: 25%;
-  }
-
   .postcon {
     display: inline-block;
     width: 40%;
     justify-content: center;
   }
-}
-.sidenavbar{
-  height: 100%;
-  width: 100%;
-  background-color:aquamarine;
 }
