@@ -180,6 +180,9 @@ button:hover {
   .Logincon{
     margin-top: 25%;
   }
+ .Form{
+  margin: 20%;
+ }
 }
 #Homeparticles{
   z-index: -1;
