@@ -5,6 +5,7 @@ import { addDoc,deleteDoc, collection,getDocs,query, where, doc } from "firebase
 import { auth, db } from "../../config/firebase"
 import { useAuthState } from "react-firebase-hooks/auth"
 import { useEffect, useState } from "react"
+import HomeParticlesComponent from "../../components/homeparticles"
  
 interface Props{
     post:Ipost
@@ -76,7 +77,7 @@ console.log(error)
     return(
 
     <div className="postcon">
-        
+        <HomeParticlesComponent id="Homeparticles"/>
         <div className="Post">
         <div>
             <h1>{post.title}</h1>

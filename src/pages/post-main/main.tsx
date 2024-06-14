@@ -12,6 +12,7 @@ export interface Post{
 }
 
 export const Main=()=>{
+    
     const [postslist,setpostslist]=useState<Post[] | null>(null)
     const postRef=collection(db,"Posts");
     
@@ -19,14 +20,14 @@ export const Main=()=>{
         const data=await getDocs(postRef)
         setpostslist(data.docs.map((doc)=>({
             ...doc.data(),id:doc.id
-        }))as Post[])
-    }
-    useEffect(()=>{
-        getposts()
-    },[])
-    return <div>
+            }))as Post[])
+            }
+            useEffect(()=>{
+                getposts()
+                },[])
+                return <div>
         {postslist?.map((post)=>(
-<Post post={post}/>
-        ))}
+            <Post post={post}/>
+            ))}
     </div>
 }

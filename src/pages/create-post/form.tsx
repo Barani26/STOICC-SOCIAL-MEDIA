@@ -8,6 +8,7 @@ import { title } from "process"
 import {Await,useNavigate} from 'react-router-dom'
 
 import { useAuthState } from "react-firebase-hooks/auth"
+import HomeParticlesComponent from "../../components/homeparticles"
 interface CreateFormData{
     title:string,
     description:string
@@ -37,7 +38,10 @@ export const CreateForm=()=>{
        nav("/")
     }
     return(
+
         <form className="Form" onSubmit={handleSubmit(onUpload) } >
+            <HomeParticlesComponent id="Homeparticles"/>
+
         <h2>POST SOMETHING AWESOME</h2>
         <input placeholder="Title" {...register("title")} />
         <p style={{color:"red"}}>{errors.title?.message}</p>
